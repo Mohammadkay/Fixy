@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+/** important things**/
+:root {
+  --Orange: #e97023;
+  --White: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+  letter-spacing: 0.13rem;
+  color: var(--White);
+}
+
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+.text-center {
+  text-align: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.align-center {
+  align-items: center;
+}
+
+html {
+  font-size: 10px;
+}
+/**Navbar**/
+.Navbar {
+  background-color: var(--Orange);
+}
+.Navbar nav {
+  justify-content: space-between;
+  padding: 0 15px;
+  align-items: center;
+
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+}
+.normal_mnue {
+  gap: 4rem;
+  text-align: center;
+  padding-left: 65px;
+
+  font-size: 2.8rem;
+}
+a {
+  text-decoration: none;
+  color: var(--White);
+}
+.logo img {
+  width: 200px;
+}
+
+.Burger-menu {
+  display: none;
+  align-self: center;
+}
+.nav_burger {
+  display: none;
+}
+/****Hero ****/
+.Hero {
+  font-size: 4rem;
+  color: var(--Orange);
+}
+.app_section {
+  justify-content: center;
+  gap: 60px;
+}
+.app_section div {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app_button {
+  background-color: black;
+  color: var(--White);
+  width: 233px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 8px;
+  line-height: 20px;
+}
+
+.app_section h1 {
+  color: var(--Orange);
+}
+.app_button .app_text {
+  align-self: center;
+}
+.app_button .app_text p {
+  font-size: 1.4rem;
+}
+.app_button .app_text .app_text {
+  font-size: 2rem;
+}
+.Hero {
+  justify-content: space-around;
+}
+/* *******About   *********/
+.about_Fixy {
+  background-color: var(--Orange);
+  padding: 10px;
+  margin-top: 25px;
+}
+.about_Fixy div h1 {
+  font-size: 5rem;
+}
+
+.about_Fixy section article {
+  font-size: 2.5rem;
+  width: 50%;
+  padding: 15px;
+}
+.about_Fixy figure img {
+  width: 500px;
+}
+
+/********** Services****************/
+.services_figure {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  margin: auto;
+  justify-items: center;
+  gap: 15px;
+}
+
+.service_section {
+  margin-top: 25px;
+}
+/***********/
+.Why_FIXY {
+  background-color: var(--Orange);
+  margin-top: 25px;
+  padding: 25px 0;
+}
+.Why_FIXY h1 {
+  font-size: 5rem;
+}
+.Why_FIXY article {
+  width: 70%;
+  margin: auto;
+  font-size: 2rem;
+}
+/******Contact us ******/
+.contact_us {
+  color: var(--Orange);
+}
+.contact_us h1 {
+  font-size: 5rem;
+  color: var(--Orange);
+}
+.contact_us h2 {
+  font-size: 3rem;
+  color: var(--Orange);
+}
+.contact_icon {
+  background-color: var(--Orange);
+  padding: 20px;
+  border-radius: 50%;
+}
+/* Footer **/
+footer {
+  margin-top: 25px;
+  background-color: #e97023;
+  padding: 20px;
+}
+footer figure img {
+  width: 300px;
+}
+footer p {
+  font-size: 2rem;
+}
+/*media query*/
+@media screen and (max-width: 830px) {
+  .Burger-menu {
+    display: block;
+    padding-left: 10px;
+  }
+  .normal_mnue {
+    display: none;
+  }
+  .show-menu {
+    display: flex;
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    background: var(--Orange);
+    flex-direction: column;
+    top: 6.83rem;
+    left: 0;
+    font-size: 2.5rem;
+  }
+
+  .services_figure {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 831px) {
+  .show-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 970px) {
+  .Burger-menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 470px) {
+  .logo img {
+    width: 130px;
+  }
+  .mobile_imag {
+    width: 240px;
+    height: 495px;
+  }
+  .services_figure {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer figure img {
+    width: 200px;
+  }
+  html {
+    font-size: 8px;
+  }
+  .app_section h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 830px) {
+  .about_Fixy section article {
+    width: 90%;
+  }
+  .about_Fixy figure img {
+    width: 80%;
+  }
+}
