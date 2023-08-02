@@ -37,7 +37,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 8px;
 }
 /**Navbar**/
 .Navbar {
@@ -45,7 +45,7 @@ html {
 }
 .Navbar nav {
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 2rem;
   align-items: center;
 
   width: 100%;
@@ -56,16 +56,16 @@ nav ul {
 .normal_mnue {
   gap: 4rem;
   text-align: center;
-  padding-left: 65px;
+  padding-left: 7rem;
 
-  font-size: 2.8rem;
+  font-size: 2.2rem;
 }
 a {
   text-decoration: none;
   color: var(--White);
 }
 .logo img {
-  width: 200px;
+  width: 20rem;
 }
 
 .Burger-menu {
@@ -128,10 +128,10 @@ a {
 .about_Fixy section article {
   font-size: 2.5rem;
   width: 50%;
-  padding: 15px;
+  padding: 2rem 14rem;
 }
 .about_Fixy figure img {
-  width: 500px;
+  width: 50rem;
 }
 
 /********** Services****************/
@@ -141,7 +141,7 @@ a {
   width: 90%;
   margin: auto;
   justify-items: center;
-  gap: 15px;
+  gap: 2rem;
 }
 
 .service_section {
@@ -159,7 +159,7 @@ a {
 .Why_FIXY article {
   width: 70%;
   margin: auto;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 /******Contact us ******/
 .contact_us {
@@ -221,19 +221,12 @@ footer p {
     display: none;
   }
 }
-@media screen and (max-width: 970px) {
-  .Burger-menu {
-    display: block;
-  }
-}
+
 @media screen and (max-width: 470px) {
   .logo img {
-    width: 130px;
+    width: 14rem;
   }
-  .mobile_imag {
-    width: 240px;
-    height: 495px;
-  }
+
   .services_figure {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -241,7 +234,7 @@ footer p {
     width: 200px;
   }
   html {
-    font-size: 8px;
+    font-size: 6px;
   }
   .app_section h1 {
     font-size: 3rem;
